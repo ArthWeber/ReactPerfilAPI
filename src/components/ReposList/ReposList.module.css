@@ -1,0 +1,54 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.load {
+    margin-bottom: 1rem;
+}
+
+.list {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.listItem {    
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;    
+    background-color: var(--bg-secondary-color);
+    text-align: center;
+}
+
+.itemName b, 
+.itemLanguage b {   
+    margin-right: 4px;
+}
+
+.itemHtmlUrl {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: var(--bg-color);
+    border-radius: 4px;   
+}
+
+@media screen and (max-width: 768px) {
+
+    .load {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .list {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 0;
+    }
+}
