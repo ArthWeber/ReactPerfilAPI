@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Perfil from './components/Perfil'
 import ReposList from './components/ReposList'
-import { IoSearchCircle } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import './global.css'
 
